@@ -1,5 +1,6 @@
 import os
 from datetime import timedelta
+
 from dotenv import load_dotenv
 
 load_dotenv('.env')
@@ -11,7 +12,6 @@ SECRET_KEY = os.getenv('SECRET_KEY', default='123')
 DEBUG = False
 
 ALLOWED_HOSTS = os.getenv('ALLOWED_HOSTS', default='*')
-
 
 INSTALLED_APPS = [
     'django.contrib.admin',
@@ -70,7 +70,6 @@ DATABASES = {
     }
 }
 
-
 AUTH_PASSWORD_VALIDATORS = [
     {
         'NAME': 'django.contrib.auth.password_validation.UserAttributeSimilarityValidator',
@@ -86,7 +85,6 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
-
 LANGUAGE_CODE = 'en-us'
 
 TIME_ZONE = 'UTC'
@@ -96,7 +94,6 @@ USE_I18N = True
 USE_L10N = True
 
 USE_TZ = True
-
 
 STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')
