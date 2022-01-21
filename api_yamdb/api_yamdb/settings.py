@@ -53,7 +53,7 @@ TEMPLATES = [
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
             ],
-
+        },
     },
 ]
 
@@ -66,7 +66,7 @@ DATABASES = {
         'USER': os.environ.get('POSTGRES_USER', default='postgres'),
         'PASSWORD': os.environ.get('POSTGRES_PASSWORD', default='postgres'),
         'HOST': os.environ.get('DB_HOST', default='db'),
-        'PORT': os.eviron.get('DB_PORT', default='5432')
+        'PORT': os.environ.get('DB_PORT', default='5432')
     }
 }
 
