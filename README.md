@@ -12,13 +12,16 @@ yamdb_final
 
 git clone https://github.com/KotsenkoM/yamdb_final.git
 
-2. Перейти в каталог api_yamdb
+2. Перейти в каталог infra
 
-cd yamdb_final/api_yamdb
+cd yamdb_final/api_yamdb/infra
 
 3. Запустить Dockerfile 
 
-docker build ./
+sudo docker-compose up -d --build
+
+
+Проект доступен по url http://localhost/
 
 ## Инфраструктура проекта
 Для работы с проектом необходимо добавить переменные в .env
@@ -30,3 +33,6 @@ DB_PASSWORD=<пароль>
 DB_HOST=<db>
 DB_PORT=<5432>
 SECRET_KEY=<секретный ключ проекта django>
+
+## Автор
+Максим Коценко https://github.com/KotsenkoM/yamdb_final
